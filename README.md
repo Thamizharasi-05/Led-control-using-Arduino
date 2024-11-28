@@ -63,17 +63,16 @@ Weighing Machines </br>
 
 ## PROGRAM
 ```
-int relayPin=6; 
-#define interval 2000 
-void setup() { 
-pinMode(relayPin, OUTPUT); 
-} 
+void setup() 
+{
+  pinMode(A0,OUTPUT);
+}
 void loop() 
-{ 
-digitalWrite(relayPin, HIGH); 
-delay(interval); 
-digitalWrite(relayPin, LOW); 
-delay(interval); 
+{
+  digitalWrite(A0,HIGH);
+  delay(3000);
+  digitalWrite(A0,LOW);
+  delay(3000);
 }
 ```
 
